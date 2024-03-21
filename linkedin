@@ -1,0 +1,52 @@
+# First open chrome
+import pyautogui as pg
+import time
+
+time.sleep(3)
+
+pg.hotkey("ctrl" , "t")
+time.sleep(1)
+pg.typewrite("linkedin")
+time.sleep(1)
+pg.press("del")
+time.sleep(1)
+pg.press("enter")
+time.sleep(2)
+
+pg.hotkey("ctrl" , "f")
+time.sleep(1)
+pg.typewrite("linkedin.com")
+time.sleep(1)
+pg.press("esc")
+time.sleep(1)
+pg.press("enter")
+time.sleep(5)
+
+pg.press("tab")
+pg.press("tab")
+pg.press("tab")
+pg.press("tab")
+pg.press("tab")
+pg.press("tab")
+time.sleep(2)
+
+pg.typewrite("IT company near me")
+pg.press("enter")
+
+
+'''
+pg.typewrite()
+
+pg.hotkey("tab")
+pg.hotkey("tab")
+pg.hotkey("tab")
+pg.hotkey("tab")
+pg.hotkey("tab")
+
+# Find the search bar by its class name and click to focus on it
+search_bar_position = pg.locateCenterOnScreen("search_bar.png", confidence=0.9)  # Replace "search_bar.png" with the image file of the search bar
+pg.click(search_bar_position)
+
+# Typewrite "vishal" into the search bar
+pg.typewrite("vishal")
+'''
